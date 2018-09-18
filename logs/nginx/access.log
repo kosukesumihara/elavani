@@ -1,0 +1,2 @@
+127.0.0.1 - - [18/Sep/2018:09:38:51 +0000] "GET /2018/09/18/hello-world/ HTTP/1.0" 200 57389 "http://elavani.local/2018/09/18/hello-world/" "WordPress/4.9.8; http://elavani.local"
+127.0.0.1 - - [18/Sep/2018:09:38:53 +0000] "POST /wp-cron.php?doing_wp_cron=1537263532.8466899394989013671875 HTTP/1.0" 499 0 "http://elavani.local/wp-cron.php?doing_wp_cron=1537263532.8466899394989013671875" "WordPress/4.9.8; http://elavani.local"

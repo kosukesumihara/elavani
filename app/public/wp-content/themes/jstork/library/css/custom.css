@@ -4,7 +4,10 @@
 追加CSS
 *********************/
 
-/*ヘッダー*/
+
+/*********************
+ヘッダー
+*********************/
 
 .header.bg,
 .header #inner-header,
@@ -51,6 +54,8 @@
 }
 #g_nav li a span {
     display: block;
+    font-size: 0.8em;
+    padding-top: 5px;
 }
 
 #g_nav li {
@@ -81,3 +86,74 @@
 @media only screen and (max-width: 480px) {
     
 }
+
+/*********************
+コンテツ
+*********************/
+.decration-border {
+    background: #000;
+    height: 1px;
+    display: inline-block;
+    width: 100px;
+}
+
+/*********************
+HOME
+*********************/
+
+
+#home-bigbanner {
+    width: 100%;
+}
+
+#home-bigbanner img {
+    width: 100%;
+}
+
+#home-bigbanner {
+    position: relative;
+    width: 100%;
+    height: auto;
+    top: -139px;
+}
+.ratio-1_1:before {
+    content: "";
+    display: block;
+    padding-top: 40%; /* 1:1 */
+}
+.ratio-1_1--inner {
+    position: absolute;
+    top: 0; 
+    left: 0;
+    width: 100%;
+}
+
+.home-bigbanner--textarea {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;  
+        
+}
+a .home-bigbanner--textarea  {
+    color: #000;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+
+/*********************
+右カテゴリーナビ
+*********************/
+.widgettitle {
+    background: none;
+    border-bottom: 2px solid #000;
+    color: #444;
+    border-radius:0;
+    
+}
+.widgettitle span {
+    padding: 0 0 0.5em 0.5em ;
+}
+
+
+

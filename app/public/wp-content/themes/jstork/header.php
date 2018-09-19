@@ -121,7 +121,7 @@
                                     Column</span></a>
                         </li>
                         <li>
-                            <a href="">豊かな"モノ"
+                            <a href="">豊かな "モノ" "コト"
                                 <span class="g_nav-en">
                                     Idea</span></a>
                         </li>

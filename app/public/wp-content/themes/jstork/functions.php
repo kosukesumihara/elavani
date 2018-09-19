@@ -101,6 +101,7 @@ if (!is_admin()) {
 CSS読み込み
 *********************/
 function register_style() {
+    wp_register_style('custom_css', get_bloginfo('template_directory').'/library/css/custom.css');
 	wp_register_style('style', get_bloginfo('template_directory').'/style.css');
 	wp_register_style('shortcode', get_bloginfo('template_directory').'/library/css/shortcode.css');
 	wp_register_style('fontawesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css');
@@ -111,6 +112,7 @@ function register_style() {
 	wp_register_style('animate', get_bloginfo('template_directory').'/library/css/animate.min.css');
 	wp_register_style('lp_css', get_bloginfo('template_directory').'/library/css/lp.css');
 }
+
 	function add_stylesheet() {
 		register_style();
 			wp_enqueue_style('style');
@@ -130,6 +132,7 @@ function register_style() {
 		}
 	}
 add_action('wp_enqueue_scripts', 'add_stylesheet');
+
 
 /*********************
 パンくずナビ
@@ -411,4 +414,34 @@ if (!function_exists('opencage_ahoy')) {
 	  add_filter( 'excerpt_more', 'opencage_excerpt_more' );
 	}
 	add_action( 'after_setup_theme', 'opencage_ahoy' );
+}
+
+
+/**
+ * イメージタグの生成.
+ *
+ * @param $file_name
+ * @param string $class
+ * @param string $alt
+ * @param integer $width
+ * @param integer $height
+ * @return null echo img tag
+ */
+function the_image($file_name, $class = '', $alt = '', $width = NULL, $height = NULL) {
+    $extra_attr = '';
+
+    if ($class) {
+        $extra_attr .= ' class="' . esc_attr($class) . '"';
+    }
+    if ($width) {
+        $extra_attr .= ' width="' . esc_attr($width) . '"';
+    }
+    if ($height) {
+        $extra_attr .= ' height="' . esc_attr($height) . '"';
+    }
+    if ($alt) {
+        $extra_attr .= ' alt="' . esc_attr($alt) . '"';
+    }
+
+    echo '<img src="' . get_theme_file_uri('/assets/images/' . $file_name) . '" ' . $extra_attr . ' >';
 }

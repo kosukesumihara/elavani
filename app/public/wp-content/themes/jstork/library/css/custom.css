@@ -1,0 +1,83 @@
+@charset "utf-8";
+
+/*********************
+追加CSS
+*********************/
+
+/*ヘッダー*/
+
+.header.bg,
+.header #inner-header,
+.menu-sp {
+    background: rgba(0, 0, 0, 0.35);
+}
+#top-header {
+    background: rgba(0, 0, 0, 1);
+    height: 38px;
+}
+.top-header-sns {
+    float: left;
+}
+.top-header-sns ul {
+    margin: 0;
+    line-height: 0;
+    padding: 12px 0 0 2em;
+}
+.top-header-sns li {
+    float: left;
+    margin-right: 10px;
+}
+.top-header-copy {
+    float: right;
+    padding: 6px 2em 0 0;
+}
+.top-header-copy ul {
+    padding: 0;
+    margin: 0;
+}
+.top-header-copy li {
+    float: left;
+}
+#g_nav li {
+    float: left;
+}
+#g_nav li a {
+    color: #FFF;
+    text-decoration: none;
+    text-align: center;
+}
+#g_nav li a:hover , #g_nav li a:hover span {
+    opacity: 0.7;
+}
+#g_nav li a span {
+    display: block;
+}
+
+#g_nav li {
+    float: left;
+    border-right: 1px solid #FFF;
+    padding: 0 2em;
+}
+
+#g_nav li:last-child {
+    border: none;
+}
+
+@media only screen and (min-width: 1166px) {
+    .header {
+        margin: 0;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    #logo {
+        padding: 0 1em 0 2em;
+    }
+    #logo img {
+        max-height: 75px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    
+}

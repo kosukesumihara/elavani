@@ -2,7 +2,7 @@
 <div id="home-bigbanner" class="ratio-1_1">
     <div class="home-bigbanner--inner ratio-1_1--inner">
         <a href="">
-            <div class="home-bigbanner--textarea">
+            <div class="home-bigbanner--textarea blur-ef">
                 <p class="readtitele__text">
                     <span>"働く"を豊かに</span>"自分が生み出したモノで誰かが幸せな時間を過ごしてほしい"
                 </p>
@@ -15,7 +15,9 @@
                     斎藤 十和子
                 </p>
             </div>
-            <?php the_image('top-img@2x.jpg', 'profile', 'グリニッチproduceエラヴァニ',1440 ,665 ); ?>
+            <div class="home-bigbanner--bg blur-ef">
+                <?php the_image('top-img@2x.jpg', 'profile', 'グリニッチproduceエラヴァニ',1440 ,665 ); ?>
+            </div>
         </a>
     </div>
 </div>

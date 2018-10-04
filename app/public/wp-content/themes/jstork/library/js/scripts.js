@@ -74,3 +74,25 @@ $(function() {
 });
   loadGravatars();
 });
+
+/////////////////////////////////
+// 画像エフェクト
+/////////////////////////////////
+window.onload = function() {
+    $('.home-bigbanner--bg.blur-ef').addClass('img-blur');
+};
+$('.home-bigbanner--textarea.blur-ef').delay(700).queue(function() {
+    $(this).addClass('img-blur').dequeue();
+});
+
+$(function() {
+    $('img').on('inview', function(event, isInView) {
+        if (isInView) {
+            //表示領域に入った時
+            $(this).addClass('img-blur');
+        } else {
+            //表示領域から出た時
+//            $(this).removeClass('img-blur');
+        }
+    });
+});

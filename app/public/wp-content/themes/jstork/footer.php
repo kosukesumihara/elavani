@@ -51,5 +51,6 @@
 </footer>
 </div>
 <?php wp_footer(); ?>
+<script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery.inview/1.0.0/jquery.inview.min.js'></script>
 </body>
 </html>

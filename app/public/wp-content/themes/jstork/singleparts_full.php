@@ -68,12 +68,72 @@ endif;?>
 <?php the_post_thumbnail(); ?>
 </figure>
 <?php endif; ?>
+    <div class="entry-voice"><?php the_excerpt(); ?></div>
+    <div class="entry-staff">
+        <ul>
+            <li><?php 
+                $text = get_field(staff_text, $post_id, $format_value); 
+                if (!empty($text)) echo "<span>テキスト：</span>{$text}";
+                ?>
+                </li>
+            <li><?php 
+                $text = get_field(staff_photo, $post_id, $format_value); 
+                if (!empty($text)) echo "<span>撮影：</span>{$text}";
+                ?>
+            </li>
+            <li><?php 
+                $text = get_field(staff_edit, $post_id, $format_value); 
+                if (!empty($text)) echo "<span>編集：</span>{$text}";
+                ?>
+            </li>
+        </ul>
+    </div>
 <?php if ( !get_option( 'sns_options_hide' ) ) : ?>
 <?php get_template_part( 'parts_sns_short' ); ?>
 <?php endif; ?>
 </header>
 <?php endif;?>
-
+    <div class="preface-textarea">
+        <?php 
+        $textarea = get_field(preface, $post_id, $format_value);
+        if (!empty($textarea)) echo "<p>{$textarea}</p>";
+        ?>
+    </div>
+    <div class="interviewee-area">
+        <?php 
+        $text = get_field(interviewee_name, $post_id, $format_value); 
+        if (!empty($text)) echo "<h3>{$text}</h3> <span></span>";
+        ?>
+        <div class="interviewee-area__left">
+            <?php if( get_field(interviewee_photo) ): ?>
+            <img src="<?php the_field(interviewee_photo); ?>" />
+            <?php endif; ?>
+      
+        </div>
+        <div class="interviewee-area__right">
+        <?php 
+        $textarea = get_field(interviewee_text, $post_id, $format_value);
+        if (!empty($textarea)) echo "<p>{$textarea}</p>";
+        ?>
+        </div>
+    </div>
+    <div class="interviewer-area cf">
+        <?php 
+        $text = get_field(interviewer_name, $post_id, $format_value); 
+        if (!empty($text)) echo "<h3>{$text}</h3>";
+        ?>
+        <div class="interviewer-area__left">
+            <?php if( get_field(interviewer_photo) ): ?>
+            <img src="<?php the_field(interviewer_photo); ?>" />
+            <?php endif; ?>
+        </div>
+        <div class="interviewer-area__right">
+            <?php 
+            $textarea = get_field(interviewer_text, $post_id, $format_value);
+            if (!empty($textarea)) echo "<p>{$textarea}</p>";
+            ?>
+        </div>
+    </div>
 <?php if ( is_active_sidebar( 'addbanner-sp-titleunder' ) ) : ?>
 <?php if ( wp_is_mobile() ) : ?>
 <div class="add titleunder">

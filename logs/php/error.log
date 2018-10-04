@@ -30,3 +30,8 @@ Stack trace:
 [19-Sep-2018 06:12:01 UTC] PHP Parse error:  syntax error, unexpected ',' in /app/public/wp-content/themes/jstork/home.php on line 6
 [19-Sep-2018 06:12:01 UTC] PHP Parse error:  syntax error, unexpected ',' in /app/public/wp-content/themes/jstork/home.php on line 6
 [19-Sep-2018 06:12:01 UTC] PHP Parse error:  syntax error, unexpected ',' in /app/public/wp-content/themes/jstork/home.php on line 6
+[21-Sep-2018 00:32:57 UTC] PHP Warning:  Invalid argument supplied for foreach() in /app/public/wp-includes/update.php on line 357
+[21-Sep-2018 00:32:57 UTC] PHP Warning:  Invalid argument supplied for foreach() in /app/public/wp-includes/update.php on line 367
+[27-Sep-2018 02:35:04 UTC] PHP Warning:  不明なエラーが発生しました。WordPress.org またはこのサーバーの設定に何か問題が起きている可能性があります。問題が解決しない場合は<a href="https://ja.wordpress.org/support/">サポートフォーラム</a>に投稿してみてください。 (WordPress は WordPress.org との安全な接続を確立できませんでした。サーバー管理者にご連絡ください) in /app/public/wp-admin/includes/translation-install.php on line 65
+[27-Sep-2018 02:35:09 UTC] PHP Warning:  不明なエラーが発生しました。WordPress.org またはこのサーバーの設定に何か問題が起きている可能性があります。問題が解決しない場合は<a href="https://ja.wordpress.org/support/">サポートフォーラム</a>に投稿してみてください。 (WordPress は WordPress.org との安全な接続を確立できませんでした。サーバー管理者にご連絡ください) in /app/public/wp-admin/includes/translation-install.php on line 65
+[27-Sep-2018 06:07:04 UTC] PHP Parse error:  syntax error, unexpected ')' in /app/public/wp-content/themes/jstork/singleparts_full.php on line 74

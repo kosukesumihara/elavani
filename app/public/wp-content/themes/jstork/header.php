@@ -112,21 +112,21 @@
                 <nav id="g_nav" role="navigation">
                     <ul>
                         <li>
-                            <a href="">"働く"を豊かに<span class="g_nav-en">
+                            <a href="">"働く"を豊かに<br><span class="g_nav-en">
                                 Interview</span></a>
                         </li>
                         <li>
-                            <a href="">北欧の暮らし方
+                            <a href="">北欧の暮らし方<br>
                                 <span class="g_nav-en">
                                     Column</span></a>
                         </li>
                         <li>
-                            <a href="">豊かな "モノ" "コト"
+                            <a href="">豊かな "モノ" "コト"<br>
                                 <span class="g_nav-en">
                                     Idea</span></a>
                         </li>
                         <li>
-                            <a href="">Hyugee とは？
+                            <a href="">Hyugee とは？<br>
                                 <span class="g_nav-en">
                                     About us</span></a>
                         </li>
